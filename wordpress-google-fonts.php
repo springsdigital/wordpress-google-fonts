@@ -2,8 +2,8 @@
 /**
  * @package Wordpress Google Fonts
  * @version 1.0
- * @link              https://springsdigital.com
- * @since             1.0
+ * @link    https://springsdigital.com
+ * @since   1.0
  */
 
 /**
