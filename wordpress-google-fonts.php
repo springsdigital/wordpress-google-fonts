@@ -18,10 +18,12 @@
  *
  */
 
-function remove_storefront_google_fonts(){wp_dequeue_style('storefront-fonts');}
-add_action( 'wp_enqueue_scripts', 'remove_storefront_google_fonts', 999);
+function remove_storefront_google_fonts() {
+  wp_dequeue_style('storefront-fonts');
+}
+add_action('wp_enqueue_scripts', 'remove_storefront_google_fonts', 999);
 
-function google_fonts(){
-wp_enqueue_style( 'GoogleFonts', plugins_url('/wordpress-google-fonts.css', __FILE__), false, '1.0.0', 'all');
+function google_fonts() {
+  wp_enqueue_style( 'GoogleFonts', plugins_url('/wordpress-google-fonts.css', __FILE__), false, '1.0.0', 'all');
 }
 add_action('wp_enqueue_scripts', 'google_fonts');
